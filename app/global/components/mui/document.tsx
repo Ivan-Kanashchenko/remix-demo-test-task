@@ -23,6 +23,13 @@ interface DocumentProps {
   title?: string;
 }
 
+interface EmotionSheetWithInsertedTag {
+  _insertTag: (tag: HTMLStyleElement) => void;
+  container: HTMLElement;
+  flush: () => void;
+  tags: HTMLStyleElement[];
+}
+
 export const MuiDocument = withEmotionCache(({children, title}: DocumentProps, emotionCache) => {
   const clientStyleData = React.useContext(EmotionStyleContext);
   const locale = useLoaderData<typeof RootClientLoader>();
@@ -37,7 +44,7 @@ export const MuiDocument = withEmotionCache(({children, title}: DocumentProps, e
     const tags = emotionCache.sheet.tags;
     emotionCache.sheet.flush();
     tags.forEach(tag => {
-      (emotionCache.sheet as any)._insertTag(tag);
+      (emotionCache.sheet as unknown as EmotionSheetWithInsertedTag)._insertTag(tag);
     });
     // reset cache to reapply global styles
     clientStyleData.reset();
