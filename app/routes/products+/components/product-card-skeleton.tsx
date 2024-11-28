@@ -13,12 +13,15 @@ export const ProductCardSkeleton: FC = () => {
           </Box>
 
           <Skeleton variant="text" width="40%" />
+
           <Skeleton variant="text" width="40%" />
 
           <Skeleton variant="text" width="40%" />
+
           <Skeleton variant="text" width="40%" />
 
           <Skeleton variant="text" width="40%" />
+
           <Skeleton variant="text" width="40%" />
 
           <Stack spacing={1} mt={1}>

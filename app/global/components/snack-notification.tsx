@@ -10,7 +10,7 @@ import {Notification, NotificationProps} from './notification';
 
 declare module 'notistack' {
   interface VariantOverrides {
-    defaultType: SnackNotificationProps;
+    default: SnackNotificationProps;
     warning: SnackNotificationProps;
     success: SnackNotificationProps;
     info: SnackNotificationProps;
