@@ -1,14 +1,14 @@
-import {InitOptions} from 'i18next';
-
 import {languagesDefault, languagesSupported} from './resource';
 
 //
 //
 
-export default {
+const i18n = {
   supportedLngs: languagesSupported,
   fallbackLng: languagesDefault,
   defaultNS: 'common',
   react: {useSuspense: false},
   saveMissing: true,
-} as Omit<InitOptions, 'react' | 'detection'>;
+};
+
+export default i18n;

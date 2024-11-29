@@ -4,9 +4,9 @@ import ar from '~/../public/locales/ar';
 const languages = ['en', 'ar'] as const;
 
 export type Language = (typeof languages)[number];
-export type Resource = typeof en; // default language
+export type Resource = typeof en | typeof ar; // default language
 
-export const languagesDefault = 'en' as Language;
+export const languagesDefault = 'en';
 export const languagesSupported = [...languages];
 
 //
