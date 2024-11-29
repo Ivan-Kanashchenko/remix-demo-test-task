@@ -8,10 +8,11 @@ import {yupResolver} from '@hookform/resolvers/yup';
 
 import {useMutationSignIn} from '~/services/auth';
 
+import {useI18nNavigate} from '~/global/hooks/use-i18n-navigate';
+
 import {PageShell} from '~/global/components/page-shell';
 import {AppInputPassword} from '~/global/components/app-input-password';
 import {AppInput} from '~/global/components/app-input';
-import {useI18nNavigate} from '~/global/hooks/use-i18n-navigate';
 
 import {apiSaveTokens} from '~/api-client/utils/tokens';
 

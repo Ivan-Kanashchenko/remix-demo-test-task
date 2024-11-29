@@ -2,7 +2,6 @@ import type {MetaFunction} from '@remix-run/node';
 import {ClientLoaderFunctionArgs, Form, redirect, useLoaderData} from '@remix-run/react';
 import {useForm, FormProvider} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
-import {useMutation} from '@tanstack/react-query';
 import {useTranslation} from 'react-i18next';
 import {useSnackbar} from 'notistack';
 import * as yup from 'yup';
@@ -14,9 +13,7 @@ import {useMutationCategoriesUpdate, useQueryCategoriesGet} from '~/services/cat
 
 import {useI18nNavigate} from '~/global/hooks/use-i18n-navigate';
 
-import {AppInputSwitch} from '~/global/components/app-input-switch';
 import {PageShell} from '~/global/components/page-shell';
-import {AppInput} from '~/global/components/app-input';
 
 import {CategoriesForm} from './components/form';
 

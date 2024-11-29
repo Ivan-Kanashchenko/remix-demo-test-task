@@ -8,9 +8,9 @@ import {useQueryProductsList} from '~/services/products';
 
 import {SkeletonOnLoading} from '~/global/components/skeleton-on-loading';
 import {AppButton} from '~/global/components/app-button';
+import theme from '~/global/components/mui/theme';
 
 import {ProductsTable} from './components/table';
-import theme from '~/global/components/mui/theme';
 import {ProductCardsList} from './components/product-cards';
 
 //

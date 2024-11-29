@@ -1,10 +1,8 @@
 import {FC} from 'react';
-
 import {useTranslation} from 'react-i18next';
-
 import {useSnackbar} from 'notistack';
 
-import {Box, Grid2, Stack, Typography} from '@mui/material';
+import {Grid2, Stack, Typography} from '@mui/material';
 
 import {useMutationProductsDelete} from '~/services/products';
 

@@ -1,6 +1,6 @@
-import {Box} from '@mui/material';
-
 import {useTranslation} from 'react-i18next';
+
+import {Box} from '@mui/material';
 
 import {AppInput} from '~/global/components/app-input';
 import {AppInputSwitch} from '~/global/components/app-input-switch';
