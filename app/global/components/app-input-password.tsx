@@ -22,8 +22,6 @@ export const AppInputPassword = (props: AppInputProps) => {
               <IconButton
                 aria-label="toggle password visibility"
                 onClick={toggle.toggle}
-                onMouseDown={toggle.preventEventDefault}
-                onMouseUp={toggle.preventEventDefault}
                 edge="end"
               >
                 {toggle.value ? <VisibilityOff /> : <Visibility />}
