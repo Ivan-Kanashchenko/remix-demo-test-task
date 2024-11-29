@@ -18,10 +18,10 @@ declare module 'notistack' {
   }
 }
 
-interface SnackNotificationProps extends NotificationProps {
+type SnackNotificationProps = NotificationProps & {
   noClose?: boolean;
   alertProps?: AlertProps;
-}
+};
 
 //
 
