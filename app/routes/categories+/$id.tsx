@@ -6,8 +6,6 @@ import {useTranslation} from 'react-i18next';
 import {useSnackbar} from 'notistack';
 import * as yup from 'yup';
 
-import {Box} from '@mui/material';
-
 import {queryClient} from '~/services/client';
 import {useMutationCategoriesUpdate, useQueryCategoriesGet} from '~/services/categories';
 
