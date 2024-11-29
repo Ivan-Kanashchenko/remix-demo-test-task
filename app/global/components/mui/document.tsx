@@ -36,9 +36,12 @@ export const MuiDocument = withEmotionCache(({children, title}: DocumentProps, e
     // re-inject tags
     const tags = emotionCache.sheet.tags;
     emotionCache.sheet.flush();
-    tags.forEach(tag => {
-      (emotionCache.sheet as any)._insertTag(tag);
-    });
+
+    // any ideas
+
+    // tags.forEach(tag => {
+    //   (emotionCache.sheet as any)._insertTag(tag);
+    // });
     // reset cache to reapply global styles
     clientStyleData.reset();
     // eslint-disable-next-line react-hooks/exhaustive-deps
