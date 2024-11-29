@@ -34,7 +34,9 @@ export const MuiDocument = withEmotionCache(({children, title}: DocumentProps, e
     // re-link sheet container
     emotionCache.sheet.container = document.head;
     // re-inject tags
-    const tags = emotionCache.sheet.tags;
+
+    // const tags = emotionCache.sheet.tags;
+
     emotionCache.sheet.flush();
 
     // any ideas
