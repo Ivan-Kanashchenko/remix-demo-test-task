@@ -4,7 +4,7 @@ import {useTranslation} from 'react-i18next';
 
 import {useSnackbar} from 'notistack';
 
-import {Grid2} from '@mui/material';
+import {Box, Grid2, Stack, Typography} from '@mui/material';
 
 import {useMutationProductsDelete} from '~/services/products';
 
@@ -47,7 +47,11 @@ export const ProductCardsList: FC<ProductCardsListProps> = ({data, isLoading}) =
   }
 
   if (!data?.length) {
-    return null;
+    return (
+      <Stack alignItems="center" justifyContent="center">
+        <Typography>{t('common:noResults')}</Typography>
+      </Stack>
+    );
   }
 
   return (
